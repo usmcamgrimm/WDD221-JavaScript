@@ -1,0 +1,87 @@
+body {
+  background-color: #212121;
+}
+h1 {
+	text-align: center;
+  font-family: Ubuntu;
+	font-weight: bold;
+  padding-bottom: 8px;
+  font-size:36px;
+	color: #d50000;
+  text-shadow: 2px 3px 3px #000000;
+}
+p {
+  font-family: Quintessential;
+  font-size: 22px;
+  color: #ffffff;
+}
+a:link, a:visited {
+  background-color: #212121;
+  font-family: Quintessential;
+  font-size: 22px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  color: #5fa4c4;
+  text-shadow: 8px 8px 8px #000000;
+}
+ol {
+  padding-left: 100px;
+}
+ol li {
+  font-family: Ubuntu;
+  font-size: 18px;
+  color: #ffffff;
+}
+#wrapper { 
+    background-color: #171d22;
+    color: #000000;
+    width: 80%;
+    min-width: 900px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    box-shadow: 1px 1px 16px 10px #000000, 1px -1px 16px 10px #000000;
+}
+/* Adding dropdown button */
+.dropbtn {
+  background-color: #212121;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 14px 25px;
+  font-family: Quintessential;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 125px;
+  z-index: 1;
+  box-shadow: 1px 1px 5px #000000;
+}
+.dropdown-content a {
+  color: #c0c0c0;
+  font-size: 18px;
+  background-color: #141a1e;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  color: #5fa4c4;
+  text-shadow: 6px 8px 4px #000000;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
