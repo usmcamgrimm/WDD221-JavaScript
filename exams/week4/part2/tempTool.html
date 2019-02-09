@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	Adrian Grimm
+	WDD221 JavaScript
+	Week 4 - Exam 1 Part 2
+	Temperature Conversion Tool
+	2/9/2019
+-->
+    <head>
+        <meta charset="UTF-8">
+        <title>GRIMM | Conversion Tool</title>
+        <link href="css/tempTool.css" rel="stylesheet">
+        <link href="../../../css/wdd221.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	    <link rel="icon" href="images/tabIcon.png" type="image/png" sizes="24x24">
+    </head>
+
+    <body>
+    	<div style="text-align: center">
+    		<a href="../../../index.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Labs</button>
+				<div class="dropdown-content">
+					<a href="../../../labs/week2/plants.html">Week 2</a>
+					<a href="../../../labs/week3/dogYears.html">Week 3</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Quizzes</button>
+				<div class="dropdown-content">
+					<a href="../../../quizzes/week3/wk3Quiz.html">Week 3</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Exams</button>
+				<div class="dropdown-content">
+					<a href="../wk4exam.html">Week 4 - Part 1</a>
+				</div>
+			</div>
+  		</div>
+		<br><br>
+		<div id="wrapper">
+			<h3>Temperature Converter</h3>
+			<p style="font-size:20px;">
+				<input id="f" onkeyup="convert('F')"> &nbsp; Enter Fahrenheit degrees
+				<br>
+				<input id="c" onkeyup="convert('C')"> &nbsp; Enter Celsius degrees
+			</p>
+			<script src="js/convTool.js"></script>
+		</div>
+    </body>
+	
+</html>

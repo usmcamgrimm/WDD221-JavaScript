@@ -1,23 +1,27 @@
+body {
+  background-color: #212121;
+}
 h3 {
 	text-align: center;
   font-family: Ubuntu;
-	font-weight: bold;
   padding-bottom: 8px;
   font-size:36px;
+  font-weight: normal;
 	color: #d50000;
   text-shadow: 2px 3px 3px #000000;
 }
-p {
-  font-family: Quintessential;
-  font-size: 22px;
-  color: #ffffff;
-}
-ol {
-  padding-left: 100px;
-}
-ol li {
+h4 {
+  text-align: center;
   font-family: Ubuntu;
-  font-size: 18px;
+  font-size: 28px;
+  font-weight: normal;
+  color: #5fa4c4;
+  text-shadow: 2px 3px 3px #000000;
+}
+p {
+  text-align: center;
+  font-family: Neuton;
+  font-size: 22px;
   color: #ffffff;
 }
 #wrapper { 
