@@ -33,7 +33,7 @@ a:link, a:visited {
   display: inline-block;
 }
 a:hover, a:active {
-  color: #5fa4c4;
+  color: #008b8b;
   text-shadow: 8px 8px 8px #000000;
 }
 #welcome {
@@ -94,7 +94,7 @@ a:hover, a:active {
   display: block;
 }
 .dropdown-content a:hover {
-  color: #5fa4c4;
+  color: #008b8b;
   text-shadow: 6px 8px 4px #000000;
 }
 .dropdown:hover .dropdown-content {
