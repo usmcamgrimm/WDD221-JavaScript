@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Adrian Grimm
+    WDD221 JavaScript
+    Week 7 Lab
+    3/02/2019
+-->
+    <head>
+        <meta charset="UTF-8">
+        <title>GRIMM | Week 7 DOM</title>
+        <link href="css/week7.css" rel="stylesheet">
+        <link href="../../css/wdd221.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="icon" href="images/tabIcon.png" type="image/png" sizes="24x24">
+        <script src="js/week7Lab.js"></script>
+        <style>
+        a:link, a:visited {
+            background-color: #171d22;
+            font-family: Oregano;
+            font-size: 28px;
+        }
+        </style>
+    </head>
+    <body>
+        <div style="text-align: center">
+            <a href="../../index.html" style="background-color:#212121;font-family:Quintessential;font-size:22px">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Labs</button>
+                <div class="dropdown-content">
+                    <a href="../week2/plants.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Week 2</a>
+                    <a href="../week3/dogYears.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Week 3</a>
+                    <a href="../week5/myArray_yi.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Week 5</a>
+                    <a href="../week6/week6lab.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Week 6</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Quizzes</button>
+                <div class="dropdown-content">
+                    <a href="../../quizzes/week3/wk3Quiz.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Week 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Exams</button>
+                <div class="dropdown-content">
+                    <a href="../../exams/week4/wk4exam.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Week 4 - Part 1</a>
+                    <a href="../../exams/week4/part2/tempTool.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Week 4 - Part 2</a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div id="wrapper">
+            <h3 onclick="this.innerHTML='Welcome to the DOM!'">Week 7 - DOM Lab</h3>
+            <!-- Added a little DOM fun on the header -->
+                <div class="hello">Hello</div>
+                    <br>
+                <div class="hello">Hello everyone!</div>
+                    <br>
+                <div class="link" style="text-align:center">
+                    <a href="#">This link goes nowhere!</a>
+                </div>
+                    <br>
+                <div id="wrapper2" style="text-align:center">
+                    <button id="dateBtn">Click this button!</button>
+                </div>
+            <script>
+            // Started the array at eight because of the other div tags I use
+            // Also, added this code to the main page because the same JS code doesn't work if called from an external file - and I can't figure out why
+            let firstDiv = document.getElementsByTagName("div") [8];
+            firstDiv.innerHTML = "Hola Mundo!";
+            firstDiv.style.color = "#008b00";
+            firstDiv.style.fontFamily = "Mirza";
+            firstDiv.style.fontSize = "24px";
+            firstDiv.style.fontWeight = "bold";
+            firstDiv.style.paddingLeft = "10px";
+            
+            let secondDiv = document.getElementsByTagName("div") [9];
+            secondDiv.innerHTML = "Hola a todos!";
+            secondDiv.style.color = "#d50000";
+            secondDiv.style.fontFamily = "Quintessential";
+            secondDiv.style.fontSize = "22px";
+            secondDiv.style.paddingLeft = "10px";
+
+            let newDiv = document.createElement("div");
+            let button = document.createElement("button");
+            button.innerText = "Adrian made this button with JavaScript";
+            let wrapper2 = document.getElementById("wrapper2")
+            wrapper2.appendChild(button);
+
+            let dateBtn = document.getElementById("dateBtn").addEventListener("click", function() //Adds an event listener to the first button
+            {
+                alert(Date()); //pops up an alert window with the current date and time
+            });
+
+            /*
+            let divs = document.querySelectorAll("div");
+            for (let i = 0; i < divs.length; i++)
+            {
+                divs[i].style.backgroundColor = "#f9f";
+            }
+            //Code works perfectly but I don't want pink all over the place!
+            */
+            </script>
+    </body>
+</html>

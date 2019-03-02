@@ -2,12 +2,12 @@ body {
   background-color: #212121;
 }
 h3 {
-  text-align: center;
+	text-align: center;
   font-family: Ubuntu;
   padding-bottom: 8px;
   font-size:36px;
   font-weight: normal;
-  color: #d50000;
+	color: #d50000;
   text-shadow: 2px 3px 3px #000000;
 }
 p {
