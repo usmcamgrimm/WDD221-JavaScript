@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Adrian Grimm
+      WDD221 - JavaScript
+      Week 9 - Tip Calculator
+      3/14/2019
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>GRIMM | Tip Calculator</title>
+   <link href="css/styles.css" rel="stylesheet">
+   <link href="css/week9.css" rel="stylesheet">
+   <link href="../../css/wdd221.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+   <link rel="icon" href="images/tabIcon.png" type="image/png" sizes="24x24">
+   <script src="js/modernizr.custom.05819.js"></script>
+   <style>
+   /* Dropdown nav links */
+#bg {
+  background-color: #212121;
+}
+a:link, a:visited {
+  font-family: Quintessential;
+  font-size: 18px;
+  color: white;
+  padding: 14px 25px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  color: #008b8b;
+  text-shadow: 8px 8px 8px #000000;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+}
+ul li:hover ul {
+  display: block;
+}
+ul li ul {
+  position: absolute;
+  width: 170px;
+  display: none;
+}
+ul li ul li { 
+  display: block;
+}
+ul li ul li a {
+  display:block !important;
+}
+ </style>
+</head>
+
+<body>
+  <div id ="bg" style="text-align: center">
+      <a href="../../index.html">Home</a>
+      <ul>
+        <li>
+          <a href="#">Labs</a>
+          <ul>
+            <li><a href="../week2/plants.html">Week 2</a></li>
+            <li><a href="../week3/dogYears.html">Week 3</a></li>
+            <li><a href="../week5/myArray_yi.html">Week 5</a></li>
+            <li><a href="../week7/domLab.html">Week 7</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Quizzes</a>
+          <ul>
+            <li><a href="../../quizzes/week3/wk3Quiz.html">Week 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Exams</a>
+          <ul>
+            <li><a href="../../exams/week4/wk4exam.html">Week 4 - Part 1</a></li>
+            <li><a href="../../exams/week4/part2/tempTool.html">Week 4 - Part 2</a></li>
+            <li><a href="../../exams/week8/index.html">Week 8 - Part 1</a></li>
+            <li><a href="../../exams/week8/part2/index.html">Week 8 - Part 2</a></li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+  <br><br>
+  <div id="wrapper">
+    <header>
+      <h3>Tip Calculator Lab</h3>
+      </header>
+      <div id="container">
+        <h4>How much to tip?</h4>
+        <div id="calculator">
+
+          <form>
+            <p>How much was your bill?</p>
+              <p>
+                $ <input id="billamt" type="text" placeholder="Bill Amount">
+
+                <p>How was your service?
+                  <p>
+                    <select id="serviceQual">
+                  <option disabled selected value="0">-- Select One --</option>
+                  <option value="0.3">30&#37; &#45; Outstanding</option>
+                  <option value="0.2">20&#37; &#45; Good</option>
+                  <option value="0.15">15&#37; &#45; It was OK</option>
+                  <option value="0.1">10&#37; &#45; Bad</option>
+                  <option value="0.05">5&#37; &#45; Terrible</option>
+                    </select>
+                  </p>
+                </p>
+              </p>
+            </form>
+            <p>How many people are sharing the bill?</p>
+            <input id="peopleamt" type="text"> &nbsp; people
+            <button type="button" id="calculate">Calculate!</button>
+          </p>
+        </div><!--calculator end-->
+
+        <div id="totalTip">
+          <sup>$</sup><span id="tip">0.00</span>
+          <small id="each">each</small>
+        </div><!--totalTip end-->
+      </div><!--container end-->
+
+    <script src="js/tipCalc.js"></script>
+  </div>
+</body>
