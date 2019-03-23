@@ -1,0 +1,36 @@
+h3 {
+  text-align: center;
+  font-family: Iceland;
+  font-weight: bold;
+  padding-bottom: 8px;
+  font-size:42px;
+  color: #1565c0;
+  text-shadow: 4px 4px 8px #000000;
+}
+h4 {
+  text-align: center;
+  font-family: Ubuntu;
+  font-weight: bold;
+  padding-bottom: 8px;
+  font-size:28px;
+  color: #1565c0;
+  text-shadow: 1px 1px 2px #000000;
+}
+#wrapper { 
+  background-color: #171d22;
+  color: #000000;
+  width: 80%;
+  min-width: 900px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 1px 1px 16px 10px #000000, 1px -1px 16px 10px #000000;
+}
+#quiz {
+  padding-left: 15px;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 16px;
+}

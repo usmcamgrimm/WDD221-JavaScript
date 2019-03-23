@@ -1,0 +1,41 @@
+body
+{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+
+.question
+{
+	font-weight: 600;
+}
+
+.answers 
+{
+  margin-bottom: 20px;
+}
+
+.answers label
+{
+  display: block;
+}
+
+#submit
+{
+	font-family: Ubuntu;
+	font-size: 20px;
+	background-color: #1565c0;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 15px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+
+#submit:hover
+{
+	background-color: #455a64;
+	box-shadow: 2px 2px 6px #000000;
+}
