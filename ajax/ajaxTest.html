@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   Adrian Grimm
+   AJAX Practice
+   Android ROMs List
+-->
+<head>
+    <meta charset="utf-8">
+	<title>GRIMM | AJAX</title>
+   <link href="css/ajax.css" rel="stylesheet">
+   <link href="../css/wdd221.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+   <link rel="icon" href="images/tabIcon.png" type="image/png" sizes="24x24">
+   <script src="js/modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <div style="text-align: center">
+         <a href="../index.html">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Labs</button>
+            <div class="dropdown-content">
+               <a href="../labs/week2/plants.html">Week 2</a>
+               <a href="../labs/week3/dogYears.html">Week 3</a>
+               <a href="../labs/week5/myArray_yi.html">Week 5</a>
+               <a href="../labs/week6/week6lab.html">Week 6</a>
+               <a href="../labs/week7/domLab.html">Week 7</a>
+               <a href="../labs/week9/tipCal.html">Week 9</a>
+               <a href="../labs/week10/quiz.html">Week 10</a>
+               <a href="../labs/week11/jQueryLab.html">Week 11</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn">Quizzes</button>
+            <div class="dropdown-content">
+               <a href="../quizzes/week3/wk3Quiz.html">Week 3</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn">Exams</button>
+            <div class="dropdown-content">
+               <a href="../exams/week4/wk4exam.html">Week 4 - Part 1</a>
+               <a href="../exams/week4/part2/tempTool.html">Week 4 - Part 2</a>
+               <a href="../exams/week8/index.html">Week 8 - Part 1</a>
+               <a href="../exams/week8/part2/index.html">Week 8 - Part 2</a>
+            </div>
+         </div>
+      </div>
+      <br><br>
+      <div id="wrapper">
+         <div style="text-align: center">
+         <h3>AJAX Practice</h3>
+         <br>
+         <p>Click for a brief list of my contributions to the Android community!</p>
+         <button class ="button" type="button" onclick="loadXMLDoc()">Load my Android ROM history</button>
+         <br><br>
+         <table class="center" id="android"></table>
+
+         <script>
+            function loadXMLDoc()
+            {
+               var xmlhttp = new XMLHttpRequest();
+               xmlhttp.onreadystatechange = function() 
+               {
+                  if (this.readyState == 4 && this.status == 200) 
+                  {
+                     myFunction(this);
+                  }
+               };
+            xmlhttp.open("GET", "androidROM.xml", true);
+            xmlhttp.send();
+            }
+            function myFunction(xml) 
+            {
+               var i;
+               var xmlDoc = xml.responseXML;
+               var table="<tr><th>Name</th><th>DeviceID</th><th>DeviceName</th></tr>";
+               var x = xmlDoc.getElementsByTagName("ROM");
+               for (i = 0; i <x.length; i++)
+               { 
+                  table += "<tr><td>" +
+                  x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+                  "</td><td>" +
+                  x[i].getElementsByTagName("DEVICEID")[0].childNodes[0].nodeValue +
+                  "</td><td>" +
+                  x[i].getElementsByTagName("DEVICENAME")[0].childNodes[0].nodeValue +
+                  "</td></tr>";
+               }
+               document.getElementById("android").innerHTML = table;
+            }
+         </script>
+      </div>
+   </div>
+</body>
+</html>
