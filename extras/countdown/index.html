@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Adrian Grimm
+    WDD221- JavaScript
+    Week 13 Guided Activity
+    4/19/2019
+-->
+<head>
+    <title>GRIMM | Countdown</title>
+    <link type="text/css" rel="stylesheet" href="css/countdown.css">
+    <link href="css/week13.css" rel="stylesheet">
+    <link href="../../css/wdd221.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="icon" href="images/tabIcon.png" type="image/png" sizes="24x24">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div style="text-align: center">
+         <a href="../../index.html">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn" style="background:#212121">Labs</button>
+            <div class="dropdown-content">
+               <a href="../../labs/week2/plants.html">Week 2</a>
+               <a href="../../labs/week3/dogYears.html">Week 3</a>
+               <a href="../../labs/week5/myArray_yi.html">Week 5</a>
+               <a href="../../labs/week6/week6lab.html">Week 6</a>
+               <a href="../../labs/week7/domLab.html">Week 7</a>
+               <a href="../../labs/week9/tipCal.html">Week 9</a>
+               <a href="../../labs/week10/quiz.html">Week 10</a>
+               <a href="../../labs/week11/jQueryLab.html">Week 11</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn" style="background:#212121">Quizzes</button>
+            <div class="dropdown-content">
+               <a href="../../quizzes/week3/wk3Quiz.html">Week 3</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn" style="background:#212121">Exams</button>
+            <div class="dropdown-content">
+               <a href="../../exams/week4/wk4exam.html">Week 4 - Part 1</a>
+               <a href="../../exams/week4/part2/tempTool.html">Week 4 - Part 2</a>
+               <a href="../../exams/week8/index.html">Week 8 - Part 1</a>
+               <a href="../../exams/week8/part2/index.html">Week 8 - Part 2</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn" style="background:#212121">Extras</button>
+            <div class="dropdown-content">
+              <a href="../ajax/ajaxTest.html">AJAX</a>
+              <a href="../countdown/index.html">Countdown</a>
+              <a href="../playSounds/playSounds.html">Play Sounds</a>
+              <a href="../stopwatch/index.html">Stopwatch</a>
+              <a href="../toDoList/index.html">To Do List</a>
+            </div>
+         </div>
+      </div>
+      <br><br>
+    <div id="wrapper">
+        <h3>Countdown To...</h3>
+            <label for="event">Event Name:</label>
+            <input type="text" name="event" id="event"><br>
+            <label for="date">Event Date:</label>
+            <input type="text" name="date" id="date"><br>
+            <input type="button" name="countdown" id="countdown" value="Countdown!">
+            <p id="message">&nbsp;</p>
+    </div>
+</body>
+</html>

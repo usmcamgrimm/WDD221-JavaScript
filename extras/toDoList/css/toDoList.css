@@ -1,0 +1,17 @@
+h3 {
+  text-align: center;
+  text-shadow: 4px 4px 8px #000000;
+}
+a:link, a:visited {
+  background-color: #999da4;
+  font-family: Quintessential;
+  color: #171d22;
+  font-size: 22px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  color: #008b8b;
+}
