@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   Adrian Grimm
+   AJAX Final
+   5/5/2019
+-->
+<head>
+   <meta charset="utf-8">
+   <title>GRIMM | RESUME</title>
+   <link href="css/finalAJAX.css" rel="stylesheet">
+   <link href="../../../css/wdd221.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+   <link rel="icon" href="images/tabIcon.png" type="image/png" sizes="24x24">
+   <script src="js/modernizr.custom.05819.js"></script>
+   <style>
+    th, td
+    {
+      font-family: Ubuntu;
+    }
+   </style>
+</head>
+
+<body>
+   <div style="text-align: center">
+         <a href="../../../my_jQuery_yi.html">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Labs</button>
+            <div class="dropdown-content">
+               <a href="../../../labs/week2/plants.html">Week 2</a>
+               <a href="../../../labs/week3/dogYears.html">Week 3</a>
+               <a href="../../../labs/week5/myArray_yi.html">Week 5</a>
+               <a href="../../../labs/week6/week6lab.html">Week 6</a>
+               <a href="../../../labs/week7/domLab.html">Week 7</a>
+               <a href="../../../labs/week9/tipCal.html">Week 9</a>
+               <a href="../../../labs/week10/quiz.html">Week 10</a>
+               <a href="../../../labs/week11/jQueryLab.html">Week 11</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn">Quizzes</button>
+            <div class="dropdown-content">
+               <a href="../../../quizzes/week3/wk3Quiz.html">Week 3</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn">Exams</button>
+            <div class="dropdown-content">
+               <a href="../../../exams/week4/wk4exam.html">Week 4 - Part 1</a>
+               <a href="../../../exams/week4/part2/tempTool.html">Week 4 - Part 2</a>
+               <a href="../../../exams/week8/index.html">Week 8 - Part 1</a>
+               <a href="../../../exams/week8/part2/index.html">Week 8 - Part 2</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn">Extras</button>
+            <div class="dropdown-content">
+               <a href="../../../extras/countdown/index.html">Countdown</a>
+               <a href="../../../extras/playSounds/playSounds.html">Play Sounds</a>
+               <a href="../../../extras/stopwatch/index.html">Stopwatch</a>
+               <a href="../../../extras/toDoList/index.html">To Do List</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn">Final</button>
+            <div class="dropdown-content">
+               <a href="../../../exams/final/finalPart3/my_WordGame_yi.html">Word Game</a>
+            </div>
+         </div>
+      </div>
+      <br><br>
+      <div id="wrapper">
+        <div style="text-align: center">
+        <h3>Adrian M Grimm</h3>
+        <p>Please check all fields below for detailed information</p>
+        </div>
+          <ul class="accordion">
+            <li>
+              <a class="toggle" href="javascript:void(0);" style="font-family:Ubuntu; font-size:24px; color:#1565c0; font-weight:bold; text-shadow: 4px 4px 8px #000000; background-color:#171d22;">Knowledge and Skills</a>
+              <ul class="inner">
+                <li style="padding-left: 25px;">Motivated and adaptable, eager to learn and apply knowledge of data systems and web development.  Outstanding technical ability and background in electronic and physical security, with strong attention to detail and a passion for open source collaboration and development.</li>
+              </ul>
+            </li>
+            <li>
+              <a class="toggle" href="javascript:void(0);" style="font-family:Ubuntu; font-size:24px; color:#1565c0; font-weight:bold; text-shadow: 4px 4px 8px #000000; background-color:#171d22">Employment History</a>
+              <ul class="inner">
+                <button class="button" type="button" onclick="loadXMLDoc()">Load Employment History</button>
+                <table class="center" id="details"></table>
+              </ul>
+            </li>
+            <li>
+              <a class="toggle" href="javascript:void(0);" style="font-family:Ubuntu; font-size:24px; color:#1565c0; font-weight:bold; text-shadow: 4px 4px 8px #000000; background-color:#171d22">Educational Development</a>
+              <ul class="inner">
+                <li style="text-align:left; padding-left: 50px">Stark State College</li>
+                <li style="text-align:left; padding-left: 50px">Johnson & Wales University</li>
+              </ul>
+            </li>
+            <li>
+              <a class="toggle" href="javascript:void(0);" style="font-family:Ubuntu; font-size:24px; color:#1565c0; font-weight:bold; text-shadow: 4px 4px 8px #000000; background-color:#171d22">Certifications</a>
+              <ul class="inner">
+                <li style="text-align:left; padding-left: 50px">Pacom GMS Administrator</li>
+                <li style="text-align:left; padding-left: 50px">CSAA Central Station Operator Lvl 1</li>
+                <li style="text-align:left; padding-left: 50px">Special Operations Response Team Academy</li>
+                <li style="text-align:left; padding-left: 50px">Florida State Correctional Officer Certification</li>
+                <li style="text-align:left; padding-left: 50px">Corporals Leadership Course</li>
+              </ul>
+            </li>
+          </ul>
+            <!-- JavaScript refs -->
+            <script src="js/jquery-1.11.1.min.js"></script>
+            <script src="js/resume.js"></script>
+            <script src="js/details.js"></script>
+      </div>
+   </div>
+</body>
+</html>

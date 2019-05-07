@@ -16,7 +16,6 @@
         <link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link rel="icon" href="images/tabIcon.png" type="image/png" sizes="24x24">
-        <script src="js/week7Lab.js"></script>
         <style>
         a:link, a:visited {
             background-color: #171d22;
@@ -27,7 +26,7 @@
     </head>
     <body>
         <div style="text-align: center">
-            <a href="../../index.html" style="background-color:#212121;font-family:Quintessential;font-size:22px">Home</a>
+            <a href="../../my_jQuery_yi.html" style="background-color:#212121;font-family:Quintessential;font-size:22px">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Labs</button>
                 <div class="dropdown-content">
@@ -55,14 +54,23 @@
                     <a href="../../exams/week8/part2/index.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Week 8 - Part 2</a>
                 </div>
             </div>
-            <!--
             <div class="dropdown">
-                <button class="dropbtn">Quizzes</button>
+            <button class="dropbtn">Extras</button>
+            <div class="dropdown-content">
+               <a href="../../extras/ajax/ajaxTest.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">AJAX</a>
+               <a href="../../extras/countdown/index.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Countdown</a>
+               <a href="../../extras/playSounds/playSounds.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Play Sounds</a>
+               <a href="../../extras/stopwatch/index.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Stopwatch</a>
+               <a href="../../extras/toDoList/index.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">To Do List</a>
+            </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Final</button>
                 <div class="dropdown-content">
-                    <a href="../../extras/ajax/ajaxTest.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">AJAX</a>
+                    <a href="../../exams/final/ajaxFinal/finalAJAX_yi.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">AJAX</a>
+                    <a href="../../exams/final/finalPart3/my_WordGame_yi.html" style="background-color:##141a1e;font-family:Quintessential;font-size:18px">Word Game</a>
                 </div>
             </div>
-            -->
         </div>
         <br><br>
         <div id="wrapper">
@@ -82,7 +90,7 @@
             <script>
             // Started the array at eight because of the other div tags I use
             // Also, added this code to the main page because the same JS code doesn't work if called from an external file - and I can't figure out why
-            let firstDiv = document.getElementsByTagName("div") [8];
+            let firstDiv = document.getElementsByTagName("div") [12];
             firstDiv.innerHTML = "Hola Mundo!";
             firstDiv.style.color = "#008b00";
             firstDiv.style.fontFamily = "Mirza";
@@ -90,7 +98,7 @@
             firstDiv.style.fontWeight = "bold";
             firstDiv.style.paddingLeft = "10px";
             
-            let secondDiv = document.getElementsByTagName("div") [9];
+            let secondDiv = document.getElementsByTagName("div") [13];
             secondDiv.innerHTML = "Hola a todos!";
             secondDiv.style.color = "#d50000";
             secondDiv.style.fontFamily = "Quintessential";

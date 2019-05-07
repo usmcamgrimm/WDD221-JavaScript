@@ -36,13 +36,6 @@ a:hover, a:active {
   color: #008b8b;
   text-shadow: 8px 8px 8px #000000;
 }
-#welcome {
-  background-image: url(../images/Welcome.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 75%;
-  height: 450px;
-}
 #wrapper { 
   background-color: #171d22;
   color: #000000;
